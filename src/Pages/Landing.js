@@ -15,13 +15,13 @@ const PortfolioLanding = () => {
     {
       title: "Introduction to Prompt Engineering",
       issuer: "OpenLearning",
-      date: "2024",
+      date: "2025",
       image: certIntroPrompt
     },
     {
       title: "R Programming Language",
       issuer: "Western University",
-      date: "2024",
+      date: "2025",
       image: certRLanguage
     }
   ];
@@ -297,7 +297,7 @@ const PortfolioLanding = () => {
 
       {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2024 Geric Morit. All rights reserved.</p>
+        <p>&copy; 2025 Geric Morit. All rights reserved.</p>
       </footer>
     </div>
   );
