@@ -4,6 +4,10 @@ import certIntroPrompt from '../assets/introductionToPromptEngineering.png';
 import certRLanguage from '../assets/rLanguageWesternUniversity.png';
 import profilePic from '../assets/geric.jpg';
 
+import project1 from '../assets/project1.png';
+import project2 from '../assets/project2.png';
+import project3 from '../assets/project3.png';
+
 const PortfolioLanding = () => {
   const [currentCert, setCurrentCert] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -141,12 +145,27 @@ const PortfolioLanding = () => {
           <h2 className="section-title">Featured Projects</h2>
           <div className="projects-grid">
             {[
-              { title: "E-Commerce Platform", desc: "Full-stack marketplace with secure payments", techs: ["React", "Node.js", "MongoDB"], color: "purple" },
-              { title: "Task Management App", desc: "Real-time collaboration tool", techs: ["Vue.js", "Firebase", "SCSS"], color: "blue" },
-              { title: "Weather Dashboard", desc: "Beautiful weather visualization", techs: ["JavaScript", "API", "CSS3"], color: "orange" }
+              { 
+                title: "TUPT-Counseling Scheduler", 
+                desc: "Appointment Based System", 
+                techs: ["React", "Python-Flask", "MongoDB"], 
+                image: project1 
+              },
+              { 
+                title: "UBNHS School Website", 
+                desc: "A Website for UBNHS", 
+                techs: ["HTML", "CSS", "JavaScript"], 
+                image: project2
+              },
+              { 
+                title: "CryptoGuard", 
+                desc: "A System for Encrypting and Decrypting Files", 
+                techs: ["Python-Djambo", "React", "CSS"], 
+                image: project3 
+              }
             ].map((project, idx) => (
               <div key={idx} className="project-card">
-                <div className={`project-image ${project.color}`}></div>
+                <div className="project-image" style={{ backgroundImage: `url(${project.image})` }}></div>
                 <h3>{project.title}</h3>
                 <p>{project.desc}</p>
                 <div className="project-tags">

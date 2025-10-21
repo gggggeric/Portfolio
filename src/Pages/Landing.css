@@ -797,6 +797,35 @@ body {
   padding: 2rem;
 }
 
+.project-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-image::before {
+  opacity: 1;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
 /* Animations */
 @keyframes gradient {
   0%, 100% { background-position: 0% 50%; }
