@@ -114,31 +114,32 @@ const PortfolioLanding = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className={`about-section ${isVisible.about ? 'visible' : ''}`}>
-        <div className="container">
-          <h2 className="section-title">About Me</h2>
-          <div className="about-grid">
-            <div className="about-text">
-              <p>
-                Passionate developer with expertise in creating innovative web solutions. I thrive on transforming complex problems into elegant, user-friendly applications.
-              </p>
-              <p>
-                My journey in tech is driven by curiosity and a commitment to continuous learning, always staying ahead with the latest technologies and best practices.
-              </p>
-            </div>
-            <div className="skills-container">
-              <h3>Technical Skills</h3>
-              <div className="skills-grid">
-                {['React', 'JavaScript', 'Node.js', 'CSS3', 'HTML5', 'MongoDB', 'TypeScript', 'Tailwind', 'Git'].map((skill) => (
-                  <div key={skill} className="skill-badge">{skill}</div>
-                ))}
-              </div>
-            </div>
-          </div>
+    {/* About Section */}
+<section id="about" className={`about-section ${isVisible.about ? 'visible' : ''}`}>
+  <div className="container">
+    <h2 className="section-title">About Me</h2>
+    <div className="about-grid">
+      <div className="about-text">
+        <p>
+          I'm a passionate developer and a student from <strong>Technological University of the Philippines - Taguig</strong>, 
+          with expertise in creating innovative web solutions. I thrive on transforming complex problems into elegant, user-friendly applications.
+        </p>
+        <p>
+          My academic journey at TUP-Taguig has fueled my curiosity and commitment to continuous learning, 
+          always staying ahead with the latest technologies and best practices in the ever-evolving tech landscape.
+        </p>
+      </div>
+      <div className="skills-container">
+        <h3>Technical Skills</h3>
+        <div className="skills-grid">
+          {['React', 'JavaScript', 'Node.js', 'CSS3', 'HTML5', 'MongoDB', 'TypeScript', 'C++', 'Git'].map((skill) => (
+            <div key={skill} className="skill-badge">{skill}</div>
+          ))}
         </div>
-      </section>
-
+      </div>
+    </div>
+  </div>
+</section>
       {/* Projects Section */}
       <section id="projects" className={`projects-section ${isVisible.projects ? 'visible' : ''}`}>
         <div className="container">
